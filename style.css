@@ -1,0 +1,102 @@
+.wordcount {
+  font-size:40px;
+  font-family:arial;
+  vertical-align: center;
+  align: center;
+}
+
+
+
+
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 34px;
+}
+
+.description {
+  margin-bottom: 60px;
+}
+
+.main {
+  width: 1200px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row:nth-of-type(2n) {
+  background: whitesmoke;
+}
+
+
+.positive {
+  font-weight: bold;
+  background-color: #aaa;
+  color: green;
+}
+
+.text, .label {
+  padding: 10px;
+}
+
+.start-meeting {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.start-meeting {
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 9px 14px 9px 14px;
+  font-size: 13px;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  background: #0277bd;
+  color: white;
+}
+.flag-btn {
+  display: inline-block;
+  vertical-align: center;
+  horizontal-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 4px 4px 4px 4px;
+  font-size: 9px;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  background: #ff6961;
+  color: white;
+}
+
+#table-wrapper {
+  margin-bottom: 60px;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.wrapper2 {
+  margin: auto;
+  width: 30%;
+  padding: 10px;
+}
+
+.column {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}

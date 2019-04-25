@@ -1,0 +1,67 @@
+<?php Header("Cache-Control: max-age=3000, must-revalidate"); ?>
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <title>Demo Meeter</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0"></script>
+        <script type='text/javascript' src='./wrappermin.js'></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57495121-9"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-57495121-9');
+        </script>
+
+
+    </head>
+
+    <body>
+        <div class="main">
+            <h1>Demo Meeter group meeting feedback</h1>
+            <div className="description">
+              This is a demo of the Meeter group meeting analysis tool that classifies speech into information sharing, shared understanding, and other, as well as provides word counts. Make sure to use <a href="https://www.google.com/chrome/browser/">Google Chrome</a> for this demo to work.
+            </div>
+            <p>
+                Click 'Start' when you start your meeting, 'Stop' when the meeting has ended, and 'Reset' to reset the demo.
+            </p>
+            <div class="wrapper2">
+              <div class="start-meeting" onClick="startMeeting();">Start</div>
+              <div class="start-meeting" onClick="stopMeeting();">Stop</div>
+              <div class="start-meeting" onClick="resetMeeting();">Reset</div>
+            </div>
+
+            <div class="wrapper">
+                <div class="row">
+                  <div class="column">
+                    <div class="column wordcount">Dialogue Acts:</div>
+                    <canvas id="bar-chart" width="600" height="450"></canvas>
+                  </div>
+                  <div class="column wordcount">
+                    Word Count:</br>
+                    <div id="wordcount">0</div>
+                  </div>
+                </div>
+            </div>
+          <p>Created by: <a href="https://scholar.harvard.edu/bhb">Bernd Huber</a></p>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <script src="charts.js"></script>
+    </body>
+</html>
